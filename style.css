@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Lato:wght@900&family=Libre+Baskerville:wght@700&family=Qwitcher+Grypen:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Lato:wght@900&family=Libre+Baskerville:wght@700&family=montserrat:wght@200;400;600;700&family=Qwitcher+Grypen:wght@700&display=swap");
+@font-face {
+  font-family: "montserrat";
+  src: url(./font/montserrat-VariableFont_wght.ttf);
+  font-stretch: normal;
+}
+/* font-family: 'Antonio', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Qwitcher Grypen', cursive; */
+
+:root {
+  --swiper-theme-color: #007aff;
+}
+:root {
+  --logo-color-1000: #30363d;
+  --logo-color-900: #454b54;
+  --logo-color-400: #a3b1c7;
+  --logo-color-100: #454b5411;
+  --bg: #f7f9f9;
+  --fz-s: 12px;
+  --fz-sm: 14px;
+  --fz-m: 16px;
+  --fz-ml: 18px;
+  --fz-l: 22px;
+  --fz-xl: 24px;
+  --shade: 0 1px 5px rgba(0, 0, 0, 0.2);
+  --nav-height: 68px;
+}
+:root {
+  --bg-color: #f2f4f5;
+  --border-color: #e5e7eb;
+  --tc-search: #00205b;
+  --bg-color-span: #70c8b5;
+}
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* direction: ltr; */
+}
+*::after,
+*::before {
+  content: "";
+  position: absolute;
+}
+html {
+  tab-size: 4;
+  font-family: montserrat;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: "montserrat", sans-serif;
+  line-height: 1.2;
+  height: 1200px;
+  /* font-size: 16px; */
+}
+header {
+  width: 100%;
+  position: fixed;
+}
+input {
+  border: none;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+
+/* ================================ header  */
+.header {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.header-padding {
+  padding: 25px calc(3vw + 9px);
+}
+.header .search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+/* ================================ header-> logo image */
+.header .search-bar .logo-img {
+  width: 12.56%;
+}
+.header .search-bar .logo-img a img {
+  width: 100%;
+  min-width: 100%;
+}
+/* ================================ header-> search input */
+
+.header .search-bar .search-input form {
+  width: inherit;
+}
+.header .search-bar .search-input {
+  width: 39.5%;
+  background-color: var(--bg-color);
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-left: 0.9rem;
+  margin-right: 1.9rem;
+  justify-content: left;
+}
+.header .search-bar .search-input form {
+  width: 100%;
+  height: 100%;
+}
+.header .search-input form .div-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.9rem;
+}
+.header .search-bar form .div-form input {
+  width: 100%;
+  height: 54px;
+  background-color: inherit;
+  margin-left: 1.37rem;
+  color: #00205b;
+}
+.header .search-bar form .div-form input::placeholder {
+  color: #70c8b5;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "montserrat", sans-serif;
+  opacity: 1;
+}
+.button {
+  border: none;
+  background-color: inherit;
+}
+/* ================================ header-> basket  */
+.header .search-bar .basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 28px;
+}
+.header .search-bar .basket .myAccount {
+  /* display: inline-block; */
+  height: 24px;
+  margin-right: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+  /* padding-top: 2px; */
+  display: flex;
+  align-items: center;
+}
+.header .search-bar .basket .myAccount span {
+  display: inline-block;
+  height: 24px;
+  font-size: 1rem;
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  color: #00205b;
+  margin-right: -0.125rem;
+}
+.header .search-bar .basket .myAccount span::before {
+  content: "";
+  position: absolute;
+}
+.header .search-bar .basket .myAccount .drapdown-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  /* display: initial; */
+  vertical-align: baseline;
+}
+.header .search-bar .basket .button-img {
+  width: 28px;
+  height: 28px;
+  margin-left: 0.675rem;
+  color: #00205b;
+}
+.header .search-bar .basket button img {
+  width: inherit;
+  height: inherit;
+}
+.header .search-bar .basket .button-img span {
+  min-width: 20px;
+  /* height: 19px; */
+  background-color: var(--bg-color-span);
+  position: relative;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  text-align: center;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: montserrat;
+  display: inline-block;
+}
+
+/* ================================ header-> navbar */
+.navbar {
+  width: 100%;
+  height: 44px;
+  padding-top: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: inherit;
+}
+.navbar nav {
+  height: 24px;
+}
+.navbar nav ul {
+  height: 24px;
+  display: flex;
+  position: relative;
+  vertical-align: baseline;
+}
+.navbar nav ul li {
+  display: inline;
+  list-style-type: none;
+  text-align: center;
+  height: 100%;
+}
+.navbar ul li a {
+  color: #00205b;
+  font-weight: 400;
+  text-shadow: none;
+  height: inherit;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.navbar nav ul li .books {
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: calc(2vw - 3px);
+  /* font-stretch: extra-condensed; */
+}
+.navbar nav ul li .books::after {
+  content: "|";
+  position: absolute;
+  color: #00205b;
+  font-weight: 400;
+  right: 0;
+  top: 0;
+}
+.navbar ul li .gift-cards,
+.navbar ul li .toys {
+  padding: 0 calc(2vw - 3px);
+}
+.navbar nav ul li .gift-cards::after {
+  content: "|";
+  position: absolute;
+  color: #00205b;
+  font-weight: 400;
+  right: 0;
+  top: 0%;
+}
+.navbar ul li .gifts {
+  padding-left: calc(2vw - 3px);
+}
+.navbar nav ul li .toys::after {
+  content: "|";
+  position: absolute;
+  color: #00205b;
+  font-weight: 400;
+  right: 0;
+  top: 0%;
+}
+
